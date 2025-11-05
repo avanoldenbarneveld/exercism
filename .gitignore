@@ -1,0 +1,21 @@
+# Exercism metadata
+.exercism/
+
+# Node / JS common ignores
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+*.tmp
+
+# Exercism auto-generated configs (we don’t need these in repo)
+.npmrc
+babel.config.js
+eslint.config.mjs
+jest.config.js
+
+# System / OS files
+.DS_Store
+Thumbs.db

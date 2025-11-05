@@ -1,0 +1,17 @@
+# Exercism metadata (not needed in GitHub)
+.exercism/
+
+# Node / JS common ignores
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment or temp files
+.env
+*.tmp
