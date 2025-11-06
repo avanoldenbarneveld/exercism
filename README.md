@@ -13,25 +13,4 @@ I use Exercism to:
 * Apply test-driven development (TDD).
 * Track my growth as a developer over time.
 
-## 🗂️ Structure
-
-```
-exercism/
- └─ javascript/
-     ├─ hello-world/
-     │  ├─ hello-world.js
-     │  ├─ hello-world.spec.js
-     │  ├─ README.md
-     │  └─ package.json
-     └─ ...
-```
-
-## 💬 About Me
-
-**Alberto van Oldenbarneveld**
-Frontend Developer focused on React, TypeScript, and clean software design.
-🌐 [albertovan.com](https://albertovan.com) • [LinkedIn](https://www.linkedin.com/in/albertovan)
-
----
-
 🧩 *More exercises will be added as I progress through different language tracks on Exercism.*
