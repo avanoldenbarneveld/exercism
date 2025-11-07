@@ -39,10 +39,7 @@ export function frontDoorResponse(line) {
  * @returns {string} the front door password
  */
 export function frontDoorPassword(word) {
-  const capitalizedLetter = word[0].toUpperCase()
-  const lowercaseRestOfWord = word.slice(1).toLowerCase()
-  let capitalizedWord = capitalizedLetter + lowercaseRestOfWord
-  return capitalizedWord
+  return word[0].toUpperCase() + word.slice(1).toLowerCase()
 }
 
 /**
