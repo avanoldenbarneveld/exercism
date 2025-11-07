@@ -53,7 +53,9 @@ export function frontDoorPassword(word) {
  * @returns {string}
  */
 export function backDoorResponse(line) {
-
+  let cleanedWord = line.trim()
+  let lastLetter = cleanedWord.slice(-1)
+  return lastLetter
 }
 
 /**
@@ -64,5 +66,5 @@ export function backDoorResponse(line) {
  * @returns {string} the back door password
  */
 export function backDoorPassword(word) {
-  throw new Error('Remove this line and implement the function');
+  return frontDoorPassword(word) + ', please'
 }

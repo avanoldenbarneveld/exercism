@@ -26,8 +26,8 @@
   "dependencies": {},
   "scripts": {
     "lint": "corepack pnpm eslint .",
-    "test": "corepack pnpm jest",
-    "watch": "corepack pnpm jest --watch",
+    "test": "jest",
+    "watch": "jest --watch",
     "format": "corepack pnpm prettier -w ."
   },
   "packageManager": "pnpm@9.15.2"
