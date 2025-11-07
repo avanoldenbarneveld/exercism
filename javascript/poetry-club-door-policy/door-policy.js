@@ -27,7 +27,8 @@
  * @returns {string}
  */
 export function frontDoorResponse(line) {
-  throw new Error('Remove this line and implement the function');
+  let letter = line[0].toUpperCase()
+  return letter
 }
 
 /**
@@ -38,7 +39,10 @@ export function frontDoorResponse(line) {
  * @returns {string} the front door password
  */
 export function frontDoorPassword(word) {
-  throw new Error('Remove this line and implement the function');
+  const capitalizedLetter = word[0].toUpperCase()
+  const lowercaseRestOfWord = word.slice(1).toLowerCase()
+  let capitalizedWord = capitalizedLetter + lowercaseRestOfWord
+  return capitalizedWord
 }
 
 /**
@@ -49,7 +53,7 @@ export function frontDoorPassword(word) {
  * @returns {string}
  */
 export function backDoorResponse(line) {
-  throw new Error('Remove this line and implement the function');
+
 }
 
 /**
