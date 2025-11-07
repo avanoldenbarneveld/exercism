@@ -50,9 +50,7 @@ export function frontDoorPassword(word) {
  * @returns {string}
  */
 export function backDoorResponse(line) {
-  let cleanedWord = line.trim()
-  let lastLetter = cleanedWord.slice(-1)
-  return lastLetter
+  return line.trim().slice(-1)
 }
 
 /**
