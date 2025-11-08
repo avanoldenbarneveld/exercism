@@ -22,7 +22,7 @@ export function getItem(cards, position) {
  * @returns {number[]} the cards with the change applied
  */
 export function setItem(cards, position, replacementCard) {
-  cards.splice(position, 1, replacementCard)
+  cards[position] = replacementCard
   return cards
 }
 
@@ -98,5 +98,5 @@ export function removeItemAtBottom(cards) {
  * @returns {boolean} true if there are exactly stackSize number of cards, false otherwise
  */
 export function checkSizeOfStack(cards, stackSize) {
-  return (cards.length === stackSize)
+  return (cards.length == stackSize)
 }
