@@ -17,7 +17,7 @@ This folder contains the helper script (`exercism-helper.sh`) that extends the o
    **Ubuntu / Linux (bash):**
 
    ```bash
-   echo "source ~/Repositorios/exercism/tools/exercism-helper.sh" >> ~/.bashrc
+   echo "source ~/exercism/tools/exercism-helper.sh" >> ~/.bashrc
    source ~/.bashrc
    ```
 
