@@ -47,8 +47,8 @@ export function removePlayer(scoreBoard, player) {
  * @returns {Record<string, number>} updated score board
  */
 export function updateScore(scoreBoard, player, points) {
-  let currentScore = scoreBoard[player]
-  scoreBoard[player] = currentScore + points
+
+  scoreBoard[player] += points
   return scoreBoard
 }
 
@@ -60,8 +60,7 @@ export function updateScore(scoreBoard, player, points) {
  */
 export function applyMondayBonus(scoreBoard) {
   for (let player in scoreBoard) {
-    let currentScore = scoreBoard[player]
-    scoreBoard[player] = currentScore + 100
+    scoreBoard[player] += 100
   }
   return scoreBoard;
 }
