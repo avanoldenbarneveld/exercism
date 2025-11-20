@@ -10,7 +10,12 @@
  * @returns {Visitor} the visitor that was created
  */
 export function createVisitor(name, age, ticketId) {
-  throw new Error('Remove this line and implement the function');
+  const obj = {
+    'name': name,
+    'age': age,
+    'ticketId': ticketId,
+  }
+  return obj;
 }
 
 /**
@@ -20,7 +25,8 @@ export function createVisitor(name, age, ticketId) {
  * @returns {Visitor} the visitor without a ticket
  */
 export function revokeTicket(visitor) {
-  throw new Error('Remove this line and implement the function');
+  visitor.ticketId = null
+  return visitor
 }
 
 /**
@@ -31,7 +37,6 @@ export function revokeTicket(visitor) {
  * @returns {string} ticket status
  */
 export function ticketStatus(tickets, ticketId) {
-  throw new Error('Remove this line and implement the function');
 }
 
 /**
