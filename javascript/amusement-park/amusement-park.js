@@ -37,6 +37,12 @@ export function revokeTicket(visitor) {
  * @returns {string} ticket status
  */
 export function ticketStatus(tickets, ticketId) {
+  const name = tickets[ticketId];
+  let result = '';
+  if (tickets[ticketId] === null) result = 'not sold';
+  else if (typeof name == "string") result = `sold to ${name}`;
+  else if (tickets.hasOwnProperty(ticketId) === false) result = 'unknown ticket id'
+  return result
 }
 
 /**
@@ -48,7 +54,6 @@ export function ticketStatus(tickets, ticketId) {
  * @returns {string} ticket status
  */
 export function simpleTicketStatus(tickets, ticketId) {
-  throw new Error('Remove this line and implement the function');
 }
 
 /**
